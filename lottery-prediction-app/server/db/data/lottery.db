@@ -1,0 +1,22 @@
+SQLite format 3@  .r�������##�MtablepredictionspredictionsCREATE TABLE predictions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        numbers TEXT NOT NULL,
+        bonus_number INTEGER NOT NULL,
+        source TEXT NOT NULL,
+        date TEXT DEFAULT CURRENT_TIMESTAMP
+      )�~//�+tabledetected_patternsdetected_patternsCREATE TABLE detected_patterns (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        pattern_description TEXT NOT NULL,
+        confidence REAL NOT NULL,
+        date TEXT DEFAULT CURRENT_TIMESTAMP
+      )�h%%�tablepast_resultspast_resultsCREATE TABLE past_results (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        numbers TEXT NOT NULL,
+        bonus_number INTEGER NOT NULL,
+        date TEXT DEFAULT CURRENT_TIMESTAMP
+      )P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)�j))�tablemodel_accuracymodel_accuracyCREATE TABLE model_accuracy (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        model_name TEXT NOT NULL,
+        accuracy REAL NOT NULL,
+        date TEXT DEFAULT CURRENT_TIMESTAMP
+      )
